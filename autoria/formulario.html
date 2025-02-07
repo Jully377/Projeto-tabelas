@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Usuários</h1>
+        <nav>
+            <ul>
+                <li><a href="formulario.html">Página Inicial</a></li>
+                <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cadastro</h2>
+            <form id="formCadastro">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="button" onclick="gravarDados()">Gravar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Usuários Cadastrados</h2>
+            <table id="tabelaCadastro">
+                <caption>Lista de Usuários</caption>
+                <thead>
+                    <tr>
+                        <th onclick="ordenarTabela(0)">Nome</th>
+                        <th onclick="ordenarTabela(1)">E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>IFRN - Campus Santa Cruz</p>
+        <p>Trabalho de Autoria Web</p>
+        <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+        <p>Equipe: Ana Beatriz Silva de Oliveira, Julia Medeiros Gomes de Oliveira, Mariany da Silva</p>
+    </footer>
+
+    <script src="projeto.js"></script>
+</body>
+</html>
